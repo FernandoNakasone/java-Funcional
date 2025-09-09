@@ -6,6 +6,7 @@ public class Exemplo01 {
 
         IntStream fluxo = IntStream.of(x);
 
+        //filtro apenas os números ímpares e coloca em ordem crescente
         fluxo.filter( valor -> valor % 2 == 1)
                 .sorted()
                 .forEach(System.out :: println);
